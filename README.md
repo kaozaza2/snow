@@ -1,8 +1,7 @@
 # ใส่หิมะให้ OPENVPN CONNECT
 **ApkEditor**
 
-ก็อบ ``` res ``` กับ ``` smali ``` ไปใส่
-build ทีนึง
+ก็อบ ``` res ``` กับ ``` smali ``` ไปใส่แล้ว ``` Build ``` ทีนึง
 
 เปิด ``` OpenVPNClient.smali ```
 
@@ -81,7 +80,10 @@ build ทีนึง
     return-object v0
 .end method
 ```
-หา Lnet/openvpn/openvpn/OpenVPNClient;->setContentView(I)V
+หา 
+```smali
+Lnet/openvpn/openvpn/OpenVPNClient;->setContentView(I)V
+```
 ใส่
 ```smali
 iput-object p0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->mContext:Landroid/content/Context;
@@ -96,14 +98,17 @@ iput-object p0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->mContext:Landroid/conte
 
     iput-object v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->mWindowManager:Landroid/view/WindowManager;
 ```
-หา Lnet/openvpn/openvpn/AppRate;->init()V
+หา
+```smali
+Lnet/openvpn/openvpn/AppRate;->init()V
+```
 ใส่
-
+```smali
 invoke-virtual/range {p0 .. p0}, Lnet/openvpn/openvpn/OpenVPNClient;->addLuthfyAnimasi()V
-
-เปิด public.xml
-หา <public type="layout" name="luthfy_anim" id=
-ก้อบ id
-เปิด OpenVPNClient.smali
-หา const v1, 0x7f030010
+```
+เปิด ``` public.xml ```
+หา ``` <public type="layout" name="luthfy_anim" id= ```
+ก้อบเลข ``` id ```
+เปิด ``` OpenVPNClient.smali ```
+หา ``` const v1, 0x7f030010 ```
 เปลี่ยนเป็นอันที่ก้อบมา
