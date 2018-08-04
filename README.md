@@ -2,6 +2,7 @@
 **ApkEditor**
 
 ก็อบ ``` res ``` กับ ``` smali ``` ไปใส่แล้ว ``` Build ``` ทีนึง
+
 ***แก้บัค ก็อบแล้วไฟล์ไม่เข้าหรือไฟล์หาย***
 ทำตามข้างบน แล้วเปิดไฟล์ ``` layout ``` อะไรก็ได้ซักอัน แล้วเพิ่ม เว้นวรรคซักทีนึง
 
@@ -22,6 +23,7 @@
 ```
 
 หา ``` # virtual methods ```
+
 ใส่
 ```smali
 .method protected addLuthfyAnimasi()V
@@ -109,8 +111,13 @@ Lnet/openvpn/openvpn/AppRate;->init()V
 invoke-virtual/range {p0 .. p0}, Lnet/openvpn/openvpn/OpenVPNClient;->addLuthfyAnimasi()V
 ```
 เปิด ``` public.xml ```
+
 หา ``` <public type="layout" name="luthfy_anim" id= ```
+
 ก้อบเลข ``` id ```
+
 เปิด ``` OpenVPNClient.smali ```
+
 หา ``` const v1, 0x7f030010 ```
+
 เปลี่ยนเป็นอันที่ก้อบมา
