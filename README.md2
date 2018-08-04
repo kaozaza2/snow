@@ -5,7 +5,9 @@ build ทีนึง
 
 เปิด ``` OpenVPNClient.smali ```
 
-หา  ```smali .field private last_pkt_recv_view:Landroid/widget/TextView; ```
+หา  ```smali 
+.field private last_pkt_recv_view:Landroid/widget/TextView; 
+```
 
 ใส่ต่อข้างล่าง
 ```smali
