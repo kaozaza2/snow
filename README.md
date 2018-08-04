@@ -122,3 +122,5 @@ invoke-virtual/range {p0 .. p0}, Lnet/openvpn/openvpn/OpenVPNClient;->addLuthfyA
 หา ``` const v1, 0x7f030010 ```
 
 เปลี่ยนเป็นอันที่ก้อบมา
+
+``` Build ``` จบ
