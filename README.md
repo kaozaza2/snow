@@ -1,3 +1,4 @@
+#ใส่หิมะให้ OPENVPN CONNECT
 **ApkEditor**
 
 ก็อบ ``` res ``` กับ ``` smali ``` ไปใส่
@@ -82,7 +83,7 @@ build ทีนึง
 ```
 หา Lnet/openvpn/openvpn/OpenVPNClient;->setContentView(I)V
 ใส่
-
+```smali
 iput-object p0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->mContext:Landroid/content/Context;
 
     iget-object v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->mContext:Landroid/content/Context;
@@ -94,7 +95,7 @@ iput-object p0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->mContext:Landroid/conte
     move-result-object v0
 
     iput-object v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->mWindowManager:Landroid/view/WindowManager;
-
+```
 หา Lnet/openvpn/openvpn/AppRate;->init()V
 ใส่
 
