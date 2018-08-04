@@ -91,7 +91,7 @@ Lnet/openvpn/openvpn/OpenVPNClient;->setContentView(I)V
 ```
 ใส่
 ```smali
-iput-object p0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->mContext:Landroid/content/Context;
+    iput-object p0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->mContext:Landroid/content/Context;
 
     iget-object v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->mContext:Landroid/content/Context;
 
