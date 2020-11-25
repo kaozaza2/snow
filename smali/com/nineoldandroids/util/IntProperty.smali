@@ -3,26 +3,10 @@
 .source "IntProperty.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lcom/nineoldandroids/util/Property",
-        "<TT;",
-        "Ljava/lang/Integer;",
-        ">;"
-    }
-.end annotation
-
-
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .registers 13
 
-    .prologue
-    .line 32
     move-object v0, p0
 
     move-object v1, p1
@@ -72,19 +56,7 @@
 # virtual methods
 .method public final set(Ljava/lang/Object;Ljava/lang/Integer;)V
     .registers 14
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/Integer;",
-            ")V"
-        }
-    .end annotation
 
-    .annotation runtime Ljava/lang/Override;
-    .end annotation
-
-    .prologue
-    .line 43
     move-object v0, p0
 
     move-object v1, p1
@@ -153,9 +125,4 @@
 .end method
 
 .method public abstract setValue(Ljava/lang/Object;I)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;I)V"
-        }
-    .end annotation
 .end method
