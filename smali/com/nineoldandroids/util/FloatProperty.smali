@@ -2,7 +2,6 @@
 .super Lcom/nineoldandroids/util/Property;
 .source "FloatProperty.java"
 
-
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
@@ -16,13 +15,11 @@
     }
 .end annotation
 
-
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .registers 13
 
     .prologue
-    .line 32
     move-object v0, p0
 
     move-object v1, p1
@@ -68,23 +65,10 @@
     throw v5
 .end method
 
-
 # virtual methods
 .method public final set(Ljava/lang/Object;Ljava/lang/Float;)V
     .registers 10
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/Float;",
-            ")V"
-        }
-    .end annotation
 
-    .annotation runtime Ljava/lang/Override;
-    .end annotation
-
-    .prologue
-    .line 43
     move-object v0, p0
 
     move-object v1, p1
