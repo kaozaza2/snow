@@ -2,19 +2,6 @@
 .super Lcom/nineoldandroids/util/Property;
 .source "FloatProperty.java"
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lcom/nineoldandroids/util/Property",
-        "<TT;",
-        "Ljava/lang/Float;",
-        ">;"
-    }
-.end annotation
-
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .registers 13
@@ -117,9 +104,4 @@
 .end method
 
 .method public abstract setValue(Ljava/lang/Object;F)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;F)V"
-        }
-    .end annotation
 .end method
